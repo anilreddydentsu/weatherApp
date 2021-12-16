@@ -3,6 +3,8 @@ const hbs = require('hbs');
 const path = require('path');
 const {getGio, getWeather} = require('./utils/weather');
 
+const port = process.env.PORT || 3000;
+
 const app = express();
 
 //Default Paths for public and views
@@ -67,6 +69,6 @@ app.get('*', (req,res) => {
     });
 });
 
-app.listen(3000, ()=> {
-    console.log('Server started!!!');
+app.listen(port, ()=> {
+    console.log('Server started!!!' + port);
 });
