@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is Express Home page</title>
+        <link rel="stylesheet" href="/css/style.css"/>
+    </head>
+    <body>
+        {{>header}}
+        <main>
+            <h1>{{title}}</h1>
+            <form action="\weather" id="weather">
+                <label for="address">Address:</label>
+                <input id="search" type="text" id="address" name="address" required>
+                <input type="submit" value="submit"/>
+            </form>
+        </main>
+        {{>footer}}
+    </body>
+</html>
