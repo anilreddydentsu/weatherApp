@@ -28,13 +28,13 @@ app.get('', (req,res) => {
 });
 
 app.get('/about', (req,res) => {
-    res.render('index', {
+    res.render('about', {
         title: 'This is about page!!!'
     });
 });
 
 app.get('/help', (req,res) => {
-    res.render('index', {
+    res.render('help', {
         title: 'This is help page!!!'
     });
 });
